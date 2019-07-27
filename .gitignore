@@ -14,4 +14,4 @@
 # VSCode specific folder
 /.vscode/*
 src/gopkg.in/mgo.v2/
-/pkg/*
+#/pkg/*
