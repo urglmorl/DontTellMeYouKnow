@@ -1,0 +1,47 @@
+{{ define "inputData" }}
+
+    {{ template "header" . }}
+
+        <form class="form-signin" action="">
+        <div class="text-center mb-4">
+            <h1 class="h3 mb-3 font-weight-normal">Don't tell me you know</h1>
+            <p>{{ .Locale.System }}</p>
+        </div>
+        <div class="form-label-group">
+            <input type="text" id="surname" pattern="^[А-Яа-яЁё]{2,64}" title="Только русские буквы в верхнем или нижнем регистрах" class="form-control" placeholder="Surname" required autofocus>
+            <label for="surname">{{ .Locale.Surname }}</label>
+        </div>
+
+        <div class="form-label-group">
+            <input type="text" id="name" pattern="^[А-Яа-яЁё]{2,64}" title="Только русские буквы в верхнем или нижнем регистрах" class="form-control" placeholder="Name" required>
+            <label for="name">{{ .Locale.Name }}</label>
+        </div>
+
+        <select class="custom-select custom-select-md mb-3" id="country" required>
+            <option value="">{{ .Locale.Group }}</option>
+            {{range .Thing }}
+                <option >
+                    {{ .Name }}
+                </option>
+            {{end}}
+        </select>
+
+        </select>
+
+            <hr />
+            <div class="btn-group" style="width: 100%;">
+                <button onclick="location.href='/student'" class="btn btn-lg btn-secondary" type="submit" style="width: 10%;">{{ .Locale.Back }}</button>
+                <button onclick="location.href='/testing'" class="btn btn-lg btn-primary" type="submit">{{ .Locale.StartTest }}</button>
+            </div>
+            <hr />
+            <div class="text-center mb-12" style="font-size:0.9em;">
+                <a href="/teacher">{{ .Locale.IAmTeacher }}</a>
+            </div>
+            {{ template "language" . }}
+            
+            <p class="mt-5 mb-3 text-muted text-center">&copy; 2019 urglmorl</p>
+        </form>
+
+    {{ template "footer" . }}
+
+{{ end }}

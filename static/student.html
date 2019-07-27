@@ -1,0 +1,54 @@
+{{ define "student" }}
+
+  {{ template "header" . }}
+
+    <form class="form-signin" action="">
+      <div class="text-center mb-4">
+        <h1 class="h3 mb-3 font-weight-normal">Don't tell me you know</h1>
+        <p>{{ .Locale.System }}</p>
+      </div>
+      <select class="form-label-group custom-select d-block w-100" id="subject" required>
+          <option value="">{{ .Locale.Subject }}</option>
+          <option>Архитектура ПО</option>
+          <option>Системное программирование</option>
+      </select>  
+
+      <select class="form-label-group custom-select d-block w-100" id="theme" required>
+          <option value="">{{ .Locale.Theme }}</option>
+          <option>Архитектура ПО</option>
+          <option>Системное программирование</option>
+      </select> 
+
+      <hr />
+
+
+      <button onclick="validation();" class="btn btn-lg btn-primary btn-block" type="button">{{ .Locale.GoToTesting }}</button>
+      <hr />
+      <div class="text-center mb-12" style="font-size:0.9em;">
+        <a href="/teacher">{{ .Locale.IAmTeacher }}</a>
+      </div>
+      {{ template "language" . }}
+      <p class="mt-5 mb-3 text-muted text-center">&copy; 2019</p>
+    </form>
+    <script>
+      function validation(){
+        let subject = $('#subject option').filter(':selected').text();
+        let theme = $('#theme option').filter(':selected').text();
+        if(subject == '{{ .Locale.Subject }}'){
+          alert('{{ .Locale.ChooseSubject }}');
+          return;
+        }
+        else if (theme == '{{ .Locale.Theme }}'){
+          alert('{{ .Locale.ChooseTheme }}');
+          return;
+        }
+
+        
+
+        location.href='/input';
+      }
+    </script>
+
+    {{ template "footer" . }}
+
+{{ end }}

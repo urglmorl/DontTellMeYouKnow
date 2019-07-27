@@ -1,0 +1,12 @@
+{{ define "language" }}
+
+    <div class="mb-12 list-inline text-center">
+        <div class="list-inline-item text-center mb-12" style="font-size:0.6em;">
+            <p class="lnk" onclick="changeLocale({{ .Locale.FirstForeignLang.Short }})">{{ .Locale.FirstForeignLang.Name }}</p>
+        </div>
+        <div class="list-inline-item text-center mb-12" style="font-size:0.6em;">
+            <p class="lnk" onclick="changeLocale({{ .Locale.SecondForeignLang.Short }})">{{ .Locale.SecondForeignLang.Name }}</p>
+        </div>
+    </div>
+
+{{ end }}

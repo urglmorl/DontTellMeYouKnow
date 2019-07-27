@@ -1,0 +1,12 @@
+.lnk{
+    color: #007bff;
+    text-decoration: #007bff;
+    background-color: transparent;
+    text-decoration-style: solid;
+}
+
+.lnk:hover{
+    color: #0056b3;
+    cursor: pointer;
+    text-decoration: underline;
+}

@@ -1,0 +1,28 @@
+{{ define "test" }}
+
+  {{ template "header" . }}
+
+    <form class="form-signin">
+      <div class="container">
+        <div class="py-5 text-center">
+          <h2>{{ .Locale.StudentOrTeacher }}</h2>
+        </div>
+        <div class="list-inline">
+          <div class="row">
+            <div onclick="location.href='/student'" class="list-inline-item btn btn-primary mb-4 text-center col-sm">
+              {{ .Locale.Student }}
+            </div>
+            <div onclick="location.href='/teacher'"  class="list-inline-item btn btn-primary mb-4 text-center col-sm">
+              {{ .Locale.Teacher }}
+            </div>
+          </div>
+        </div>
+        <p class="text-center">{{ .Locale.YourIPAddress }} 192.168.1.147</p>
+        {{ template "language" . }}
+      </div>
+      <p class="mt-5 mb-3 text-muted text-center">&copy; 2019 urglmorl</p>
+    </form>
+
+  {{ template "footer" . }}
+
+{{ end }}

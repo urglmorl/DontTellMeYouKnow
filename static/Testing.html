@@ -1,0 +1,48 @@
+{{ define "testing" }}
+
+    {{ template "header" . }}
+
+    <div class="container">
+      <div class="py-5 text-center">
+          <h2>Какая часть операционной системы Windows была удалена из версии XP?</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+            <h4 class="mb-3">Выберите один вариант ответа</h4>
+            <form class="needs-validation" novalidate>
+                <div class="d-block my-3">
+                    <div class="custom-control custom-radio">
+                        <input id="first" name="options" type="radio" class="custom-control-input" checked required>
+                        <label class="custom-control-label mb-3 h5" for="first">First Option</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input id="second" name="options" type="radio" class="custom-control-input" required>
+                        <label class="custom-control-label mb-3 h5" for="second">Second option</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input id="third" name="options" type="radio" class="custom-control-input" required>
+                        <label class="custom-control-label mb-3 h5" for="third">Third Option</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input id="fourth" name="options" type="radio" class="custom-control-input" required>
+                        <label class="custom-control-label mb-3 h5" for="fourth">Fourth Option</label>
+                    </div>
+                </div>
+                <hr />
+                <a href="results.html">
+                <div class="row">
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">Следующий вопрос</button>
+                </div>
+                </a>
+            </form>
+        </div>
+      </div>
+      {{ template "language" . }}
+      <footer class="pt-3 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2019 urglmorl</p>
+      </footer>
+    </div>
+
+  {{ template "footer" . }}
+
+{{ end }}

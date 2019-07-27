@@ -1,0 +1,36 @@
+{
+  "locale": "ru",
+  "system": "Система контроля знаний",
+  "student": "Студент",
+  "teacher": "Преподаватель",
+  "studentOrTeacher": "Студент или преподаватель?",
+  "yourIPAddress": "Ваш IP адрес:",
+  "subject": "Предмет",
+  "theme": "Тема",
+  "goToTesting": "Перейти к тестированию",
+  "startTest": "Начать тестирование",
+  "back": "Назад",
+  "surname": "Фамилия",
+  "name": "Имя",
+  "group": "Группа",
+  "IAmTeacher": "Я преподаватель.",
+  "IAmStudent": "Я студент.",
+  "nextQuestion": "Следующий вопрос",
+  "previousQuestion": "Предыдущий вопрос",
+  "login": "Логин",
+  "password": "Пароль",
+  "showPassword": "Показать пароль",
+  "rememberMe": "Запомнить меня",
+  "signIn": "Войти",
+  "signOut": "Выйти",
+  "firstForeignLang": {
+    "name": "English.",
+    "short": "en"
+  },
+  "secondForeignLang": {
+    "name": "Norsk.",
+    "short": "no"
+  },
+  "chooseSubject": "Выберите предмет!",
+  "chooseTheme": "Выберите тему!"
+}

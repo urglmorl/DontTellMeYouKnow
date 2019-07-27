@@ -1,0 +1,36 @@
+{
+  "locale": "no",
+  "system": "Kunnskapskontrollsystem",
+  "student": "Student",
+  "teacher": "Lærer",
+  "studentOrTeacher": "Student eller lærer?",
+  "yourIPAddress": "Din IP-adresse:",
+  "subject": "Skolefag",
+  "theme": "Emnet",
+  "goToTesting": "Gå til test",
+  "startTest": "Start testing",
+  "back": "Tilbake",
+  "surname": "Etternavn",
+  "name": "Navn",
+  "group": "Gruppe",
+  "IAmTeacher": "Jeg er en lærer.",
+  "IAmStudent": "Jeg er en student.",
+  "nextQuestion": "Neste spørsmål",
+  "previousQuestion": "Forrige spørsmål",
+  "login": "Login",
+  "password": "Passord",
+  "showPassword": "Vis passord",
+  "rememberMe": "Husk meg",
+  "signIn": "Logg inn",
+  "signOut": "Logg ut",
+  "firstForeignLang": {
+    "name": "Русский.",
+    "short": "ru"
+  },
+  "secondForeignLang": {
+    "name": "English.",
+    "short": "en"
+  },
+  "chooseSubject": "Velg et skolefag!",
+  "chooseTheme": "Velg et emnet!"
+}

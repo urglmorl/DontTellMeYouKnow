@@ -1,0 +1,36 @@
+{
+  "locale": "en",
+  "system": "Knowledge control system",
+  "student": "Student",
+  "teacher": "Teacher",
+  "studentOrTeacher": "Student or teacher?",
+  "yourIPAddress": "Your IP-address:",
+  "subject": "Subject",
+  "theme": "Theme",
+  "goToTesting": "Go to testing",
+  "startTest": "Start testing",
+  "back": "Back",
+  "surname": "Surname",
+  "name": "Name",
+  "group": "Group",
+  "IAmTeacher": "I am teacher.",
+  "IAmStudent": "I am student.",
+  "nextQuestion": "Next question",
+  "previousQuestion": "Previous question",
+  "login": "Login",
+  "password": "Password",
+  "showPassword": "Show password",
+  "rememberMe": "Remember me",
+  "signIn": "Sign in",
+  "signOut": "Sign out",
+  "firstForeignLang": {
+    "name": "Русский.",
+    "short": "ru"
+  },
+  "secondForeignLang": {
+    "name": "Norsk.",
+    "short": "no"
+  },
+  "chooseSubject": "Choose a subject!",
+  "chooseTheme": "Choose a theme!"
+}
