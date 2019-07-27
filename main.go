@@ -10,20 +10,16 @@ import (
 	"net/http"
 	"os"
 	"os/signal"
-	"session"
 	"time"
 )
 
 var locale Lang
 var appSettings Settings
-var globalSessions *session.Manager
 
 func main() {
 	var err error
 	globalSession = openSession()
 	appSettings = loadSettings()
-	globalSessions, err = session.NewManager("memory", "gosessionid", 3600)
-	checkErr(err)
 
 	stopChan := make(chan os.Signal)
 	signal.Notify(stopChan, os.Interrupt)
