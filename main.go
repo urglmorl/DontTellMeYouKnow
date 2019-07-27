@@ -133,8 +133,6 @@ func changeLocale(w http.ResponseWriter, r *http.Request) {
 }
 
 func indexHandler(w http.ResponseWriter, r *http.Request) {
-	globalSessions.SessionStart(w, r)
-
 	t, err := template.ParseFiles("static/index.html", "static/header.html", "static/footer.html", "static/language.html")
 	if err != nil {
 		_, err = fmt.Fprintf(w, err.Error())
