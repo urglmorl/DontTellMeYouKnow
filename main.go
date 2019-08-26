@@ -56,6 +56,10 @@ func main() {
 	http.HandleFunc("/tests", tests)
 	http.HandleFunc("/users", users)
 	http.HandleFunc("/settings", settings)
+	// TODO: login for teachers who can do things like add/remove/change tests
+	//http.HandleFunc("/login", login)
+	// TODO: logout for teachers which done with all their admin staff and deside that they are students
+	//http.HandleFunc("/logout", logout)
 
 	srv := &http.Server{
 		Addr:         ":3000",
@@ -91,7 +95,6 @@ func localeLoad(path string) {
 	if err != nil {
 		fmt.Println(err)
 	}
-	fmt.Println("Successfully opened locale file")
 	defer jsonFile.Close()
 
 	byteValue, _ := ioutil.ReadAll(jsonFile)
